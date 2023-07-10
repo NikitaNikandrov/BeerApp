@@ -58,6 +58,7 @@
 		E5FE9D812A5C99E3000938A1 /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
+				E5FE9D9C2A5CA5AA000938A1 /* Data */,
 				E5FE9D992A5CA538000938A1 /* NetworkService */,
 				E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */,
 				E5FE9D842A5C99E3000938A1 /* SceneDelegate.swift */,
@@ -76,6 +77,13 @@
 				E5FE9D9A2A5CA57E000938A1 /* NetworkService.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		E5FE9D9C2A5CA5AA000938A1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
