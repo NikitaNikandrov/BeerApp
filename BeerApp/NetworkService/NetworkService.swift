@@ -8,5 +8,57 @@
 import Foundation
 
 final class NetworkService {
+    func prepareRequest(request: inout URLRequest) {
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")
+        request.httpMethod = "POST"
+    }
+
+    func makeGetBeerRequest() -> URLRequest {
+        let requestString = NetworkServiceStrings.rootEndpoint + NetworkServiceStrings.getBeerString
+        let urlString = requestString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let requestURL = URL(string: requestString)
+
+        var request = URLRequest(url: requestURL!) // мне не нравится тут форсанврап
+        prepareRequest(request: &request)
+        
+        return request
+    }
     
+    func makeGetBeerWithIdRequest(id: Int) -> URLRequest {
+        let requestString = NetworkServiceStrings.rootEndpoint + NetworkServiceStrings.getBeerString + "/" + String(id)
+        let urlString = requestString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let requestURL = URL(string: requestString)
+
+        var request = URLRequest(url: requestURL!) // мне не нравится тут форсанврап
+        prepareRequest(request: &request)
+        
+        return request
+    }
+    
+    func makeGetBeerRandomRequest() -> URLRequest {
+        let requestString = NetworkServiceStrings.rootEndpoint + NetworkServiceStrings.getRandomBeerString
+        let urlString = requestString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let requestURL = URL(string: requestString)
+
+        var request = URLRequest(url: requestURL!) // мне не нравится тут форсанврап
+        prepareRequest(request: &request)
+        
+        return request
+    }
+    
+    func makeGetBeerWithParametersRequest(parameters: [String : String]) -> URLRequest { // можно объединить с makeGetBeerRequest() ?
+        let requestString = NetworkServiceStrings.rootEndpoint + NetworkServiceStrings.getBeerString
+        let urlString = requestString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let requestURL = URL(string: requestString)
+
+        var request = URLRequest(url: requestURL!) // мне не нравится тут форсанврап
+        prepareRequest(request: &request)
+        
+        let requestJSONData = try? JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+
+        request.httpBody = requestJSONData
+        
+        return request
+    }
 }
