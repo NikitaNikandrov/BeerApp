@@ -8,5 +8,5 @@
 import Foundation
 
 protocol BeerApiNetworkServiceProtocol {
-    
+    // внести поля из апи модели таск 2
 }

@@ -18,6 +18,7 @@
 		E5FE9DB52A69A60E000938A1 /* CreateBeerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DB42A69A60E000938A1 /* CreateBeerRequest.swift */; };
 		E5FE9DB72A69A706000938A1 /* NetworkServiceParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DB62A69A706000938A1 /* NetworkServiceParameters.swift */; };
 		E5FE9DBA2A69AFF3000938A1 /* BeerApiNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DB92A69AFF3000938A1 /* BeerApiNetworkServiceProtocol.swift */; };
+		E5FE9DBD2A69B4C5000938A1 /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DBC2A69B4C5000938A1 /* ResponseResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E5FE9DB42A69A60E000938A1 /* CreateBeerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBeerRequest.swift; sourceTree = "<group>"; };
 		E5FE9DB62A69A706000938A1 /* NetworkServiceParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceParameters.swift; sourceTree = "<group>"; };
 		E5FE9DB92A69AFF3000938A1 /* BeerApiNetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerApiNetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		E5FE9DBC2A69B4C5000938A1 /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		E5FE9D812A5C99E3000938A1 /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
+				E5FE9DBB2A69B45A000938A1 /* Extensions */,
 				E5FE9D9F2A5CA959000938A1 /* Resources */,
 				E5FE9D992A5CA538000938A1 /* NetworkService */,
 				E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */,
@@ -104,6 +107,14 @@
 				E5FE9DB92A69AFF3000938A1 /* BeerApiNetworkServiceProtocol.swift */,
 			);
 			path = BeerApiNetworkService;
+			sourceTree = "<group>";
+		};
+		E5FE9DBB2A69B45A000938A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5FE9DBC2A69B4C5000938A1 /* ResponseResult.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				E5FE9DBA2A69AFF3000938A1 /* BeerApiNetworkServiceProtocol.swift in Sources */,
 				E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */,
 				E5FE9D9B2A5CA57E000938A1 /* BeerApiNetworkService.swift in Sources */,
+				E5FE9DBD2A69B4C5000938A1 /* ResponseResult.swift in Sources */,
 				E5FE9D852A5C99E3000938A1 /* SceneDelegate.swift in Sources */,
 				E5FE9DB52A69A60E000938A1 /* CreateBeerRequest.swift in Sources */,
 			);
