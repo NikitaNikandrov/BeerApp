@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class NetworkService {
+final class BeerApiNetworkService {
     
     func sendRequestToAPI(request:URLRequest, closure: @escaping() -> Void) { // при наличии UI добавить модель для дешифровки
         URLSession.shared.dataTask(with: request) { (data, response, error) in
