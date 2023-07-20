@@ -13,7 +13,14 @@
 		E5FE9D8A2A5C99E3000938A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5FE9D882A5C99E3000938A1 /* Main.storyboard */; };
 		E5FE9D8C2A5C99E6000938A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FE9D8B2A5C99E6000938A1 /* Assets.xcassets */; };
 		E5FE9D8F2A5C99E6000938A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5FE9D8D2A5C99E6000938A1 /* LaunchScreen.storyboard */; };
-		E5FE9D982A5CA137000938A1 /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D972A5CA137000938A1 /* ApiModel.swift */; };
+		E5FE9D982A5CA137000938A1 /* BeerApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D972A5CA137000938A1 /* BeerApiModel.swift */; };
+		E5FE9DA22A699DEC000938A1 /* MeasureOfQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DA12A699DEC000938A1 /* MeasureOfQuantity.swift */; };
+		E5FE9DA62A699EAF000938A1 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DA52A699EAF000938A1 /* Ingredients.swift */; };
+		E5FE9DA82A699ED1000938A1 /* Malt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DA72A699ED1000938A1 /* Malt.swift */; };
+		E5FE9DAA2A699EF2000938A1 /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DA92A699EF2000938A1 /* Hop.swift */; };
+		E5FE9DAE2A699F9F000938A1 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DAD2A699F9F000938A1 /* Method.swift */; };
+		E5FE9DB02A699FF1000938A1 /* MashTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DAF2A699FF1000938A1 /* MashTemp.swift */; };
+		E5FE9DB22A69A01C000938A1 /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DB12A69A01C000938A1 /* Fermentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +32,14 @@
 		E5FE9D8B2A5C99E6000938A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5FE9D8E2A5C99E6000938A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5FE9D902A5C99E6000938A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5FE9D972A5CA137000938A1 /* ApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
+		E5FE9D972A5CA137000938A1 /* BeerApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerApiModel.swift; sourceTree = "<group>"; };
+		E5FE9DA12A699DEC000938A1 /* MeasureOfQuantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureOfQuantity.swift; sourceTree = "<group>"; };
+		E5FE9DA52A699EAF000938A1 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		E5FE9DA72A699ED1000938A1 /* Malt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Malt.swift; sourceTree = "<group>"; };
+		E5FE9DA92A699EF2000938A1 /* Hop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hop.swift; sourceTree = "<group>"; };
+		E5FE9DAD2A699F9F000938A1 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		E5FE9DAF2A699FF1000938A1 /* MashTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashTemp.swift; sourceTree = "<group>"; };
+		E5FE9DB12A69A01C000938A1 /* Fermentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +87,40 @@
 		E5FE9D962A5CA117000938A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE9D972A5CA137000938A1 /* ApiModel.swift */,
+				E5FE9DA02A68846E000938A1 /* BeerApiModel */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E5FE9DA02A68846E000938A1 /* BeerApiModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5FE9D972A5CA137000938A1 /* BeerApiModel.swift */,
+				E5FE9DA12A699DEC000938A1 /* MeasureOfQuantity.swift */,
+				E5FE9DAC2A699F8A000938A1 /* Method */,
+				E5FE9DA42A699E6C000938A1 /* Ingredients */,
+			);
+			path = BeerApiModel;
+			sourceTree = "<group>";
+		};
+		E5FE9DA42A699E6C000938A1 /* Ingredients */ = {
+			isa = PBXGroup;
+			children = (
+				E5FE9DA52A699EAF000938A1 /* Ingredients.swift */,
+				E5FE9DA72A699ED1000938A1 /* Malt.swift */,
+				E5FE9DA92A699EF2000938A1 /* Hop.swift */,
+			);
+			path = Ingredients;
+			sourceTree = "<group>";
+		};
+		E5FE9DAC2A699F8A000938A1 /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				E5FE9DAD2A699F9F000938A1 /* Method.swift */,
+				E5FE9DAF2A699FF1000938A1 /* MashTemp.swift */,
+				E5FE9DB12A69A01C000938A1 /* Fermentation.swift */,
+			);
+			path = Method;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5FE9D982A5CA137000938A1 /* ApiModel.swift in Sources */,
+				E5FE9D982A5CA137000938A1 /* BeerApiModel.swift in Sources */,
 				E5FE9D872A5C99E3000938A1 /* ViewController.swift in Sources */,
 				E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */,
+				E5FE9DAA2A699EF2000938A1 /* Hop.swift in Sources */,
+				E5FE9DA82A699ED1000938A1 /* Malt.swift in Sources */,
+				E5FE9DA22A699DEC000938A1 /* MeasureOfQuantity.swift in Sources */,
+				E5FE9DB22A69A01C000938A1 /* Fermentation.swift in Sources */,
+				E5FE9DB02A699FF1000938A1 /* MashTemp.swift in Sources */,
+				E5FE9DA62A699EAF000938A1 /* Ingredients.swift in Sources */,
 				E5FE9D852A5C99E3000938A1 /* SceneDelegate.swift in Sources */,
+				E5FE9DAE2A699F9F000938A1 /* Method.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
