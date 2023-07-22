@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */; };
-		E5FE9D852A5C99E3000938A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D842A5C99E3000938A1 /* SceneDelegate.swift */; };
 		E5FE9D872A5C99E3000938A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D862A5C99E3000938A1 /* ViewController.swift */; };
-		E5FE9D8A2A5C99E3000938A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5FE9D882A5C99E3000938A1 /* Main.storyboard */; };
 		E5FE9D8C2A5C99E6000938A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FE9D8B2A5C99E6000938A1 /* Assets.xcassets */; };
 		E5FE9D8F2A5C99E6000938A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5FE9D8D2A5C99E6000938A1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		E5FE9D7F2A5C99E3000938A1 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5FE9D842A5C99E3000938A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E5FE9D862A5C99E3000938A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E5FE9D892A5C99E3000938A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5FE9D8B2A5C99E6000938A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5FE9D8E2A5C99E6000938A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5FE9D902A5C99E6000938A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */,
-				E5FE9D842A5C99E3000938A1 /* SceneDelegate.swift */,
 				E5FE9D862A5C99E3000938A1 /* ViewController.swift */,
-				E5FE9D882A5C99E3000938A1 /* Main.storyboard */,
 				E5FE9D8B2A5C99E6000938A1 /* Assets.xcassets */,
 				E5FE9D8D2A5C99E6000938A1 /* LaunchScreen.storyboard */,
 				E5FE9D902A5C99E6000938A1 /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				E5FE9D8F2A5C99E6000938A1 /* LaunchScreen.storyboard in Resources */,
 				E5FE9D8C2A5C99E6000938A1 /* Assets.xcassets in Resources */,
-				E5FE9D8A2A5C99E3000938A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +133,12 @@
 			files = (
 				E5FE9D872A5C99E3000938A1 /* ViewController.swift in Sources */,
 				E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */,
-				E5FE9D852A5C99E3000938A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E5FE9D882A5C99E3000938A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5FE9D892A5C99E3000938A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E5FE9D8D2A5C99E6000938A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +276,7 @@
 				INFOPLIST_FILE = BeerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +304,7 @@
 				INFOPLIST_FILE = BeerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
