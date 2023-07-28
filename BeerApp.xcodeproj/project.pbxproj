@@ -8,13 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E5D364132A6C731E0091F1D7 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D364122A6C731E0091F1D7 /* EndPointType.swift */; };
-		E5D364152A6C74250091F1D7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D364142A6C74250091F1D7 /* HTTPMethod.swift */; };
 		E5D364172A6C75A00091F1D7 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D364162A6C75A00091F1D7 /* HTTPTask.swift */; };
 		E5D364192A6C76F30091F1D7 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D364182A6C76F30091F1D7 /* ParameterEncoding.swift */; };
 		E5D3641B2A6C79660091F1D7 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D3641A2A6C79660091F1D7 /* URLParameterEncoder.swift */; };
-		E5D3641D2A6C7CF70091F1D7 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D3641C2A6C7CF70091F1D7 /* JSONParameterEncoder.swift */; };
-		E5D3641F2A6C814F0091F1D7 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D3641E2A6C814F0091F1D7 /* NetworkRouter.swift */; };
-		E5D364212A6C82C00091F1D7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D364202A6C82C00091F1D7 /* Router.swift */; };
 		E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */; };
 		E5FE9D852A5C99E3000938A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D842A5C99E3000938A1 /* SceneDelegate.swift */; };
 		E5FE9D872A5C99E3000938A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D862A5C99E3000938A1 /* ViewController.swift */; };
@@ -24,7 +20,6 @@
 		E5FE9D9E2A5CA5FD000938A1 /* NetworkServiceStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D9D2A5CA5FD000938A1 /* NetworkServiceStrings.swift */; };
 		E5FE9DB72A69A706000938A1 /* NetworkServiceParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DB62A69A706000938A1 /* NetworkServiceParameters.swift */; };
 		E5FE9DBD2A69B4C5000938A1 /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DBC2A69B4C5000938A1 /* ResponseResult.swift */; };
-		E5FE9DC02A69B91C000938A1 /* GetBeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9DBF2A69B91C000938A1 /* GetBeer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +42,6 @@
 		E5FE9D9D2A5CA5FD000938A1 /* NetworkServiceStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceStrings.swift; sourceTree = "<group>"; };
 		E5FE9DB62A69A706000938A1 /* NetworkServiceParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceParameters.swift; sourceTree = "<group>"; };
 		E5FE9DBC2A69B4C5000938A1 /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
-		E5FE9DBF2A69B91C000938A1 /* GetBeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBeer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +77,13 @@
 			path = Encoding;
 			sourceTree = "<group>";
 		};
+		E5D364222A743DB60091F1D7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		E5FE9D762A5C99E2000938A1 = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +103,10 @@
 		E5FE9D812A5C99E3000938A1 /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE9DBE2A69B8ED000938A1 /* BeerService */,
 				E5FE9DBB2A69B45A000938A1 /* Extensions */,
 				E5FE9D9F2A5CA959000938A1 /* Resources */,
 				E5FE9D992A5CA538000938A1 /* NetworkService */,
+				E5D364222A743DB60091F1D7 /* New Group */,
 				E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */,
 				E5FE9D842A5C99E3000938A1 /* SceneDelegate.swift */,
 				E5FE9D862A5C99E3000938A1 /* ViewController.swift */,
@@ -141,14 +142,6 @@
 				E5FE9DBC2A69B4C5000938A1 /* ResponseResult.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		E5FE9DBE2A69B8ED000938A1 /* BeerService */ = {
-			isa = PBXGroup;
-			children = (
-				E5FE9DBF2A69B91C000938A1 /* GetBeer.swift */,
-			);
-			path = BeerService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +222,6 @@
 				E5FE9D9E2A5CA5FD000938A1 /* NetworkServiceStrings.swift in Sources */,
 				E5D364172A6C75A00091F1D7 /* HTTPTask.swift in Sources */,
 				E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */,
-				E5FE9D9B2A5CA57E000938A1 /* BeerApiNetworkService.swift in Sources */,
-				E5FE9DC02A69B91C000938A1 /* GetBeer.swift in Sources */,
 				E5FE9DBD2A69B4C5000938A1 /* ResponseResult.swift in Sources */,
 				E5FE9D852A5C99E3000938A1 /* SceneDelegate.swift in Sources */,
 				E5D364132A6C731E0091F1D7 /* EndPointType.swift in Sources */,
