@@ -77,13 +77,6 @@
 			path = Encoding;
 			sourceTree = "<group>";
 		};
-		E5D364222A743DB60091F1D7 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		E5FE9D762A5C99E2000938A1 = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +99,6 @@
 				E5FE9DBB2A69B45A000938A1 /* Extensions */,
 				E5FE9D9F2A5CA959000938A1 /* Resources */,
 				E5FE9D992A5CA538000938A1 /* NetworkService */,
-				E5D364222A743DB60091F1D7 /* New Group */,
 				E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */,
 				E5FE9D842A5C99E3000938A1 /* SceneDelegate.swift */,
 				E5FE9D862A5C99E3000938A1 /* ViewController.swift */,
