@@ -13,7 +13,7 @@ enum RequestError: Error {
 }
 
 class NetworkRequestImpl: NetworkRequestProtocol {
-    func prepareNetworkRequest<T: Encodable>(urlString: String,
+    func createNetworkRequest<T: Encodable>(urlString: String,
                                              additionalURLStrings: [String]?,
                                              method: String,
                                              body: T) throws -> URLRequest {
