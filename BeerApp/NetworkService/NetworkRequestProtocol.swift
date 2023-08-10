@@ -8,5 +8,8 @@
 import Foundation
 
 protocol NetworkRequestProtocol {
-    func prepareNetworkRequest(networkRequestArguments: NetworkRequestArguments) throws -> URLRequest
+    func prepareNetworkRequest<T: Encodable>(urlString: String,
+                                             additionalURLStrings: [String]?,
+                                             method: String,
+                                             body: T) throws -> URLRequest
 }

@@ -13,35 +13,31 @@ enum RequestError: Error {
 }
 
 class NetworkRequestImpl: NetworkRequestProtocol {
-    func prepareNetworkRequest(networkRequestArguments: NetworkRequestArguments) throws -> URLRequest {
-        var endPoint = networkRequestArguments.url
-        var request: URLRequest?
+    func prepareNetworkRequest<T: Encodable>(urlString: String,
+                                             additionalURLStrings: [String]?,
+                                             method: String,
+                                             body: T) throws -> URLRequest {
+        var endPoint = urlString
         
-        switch networkRequestArguments.httpMethod {
-        case .get:
-            if let items = networkRequestArguments.getAdditionalString {
-                for item in items {
-                    endPoint.append(item)
-                }
-                guard let url = URL(string: endPoint) else { throw RequestError.badURL }
-                request = URLRequest(url: url)
-            }
-            
-        case .post:
-            guard let url = URL(string: endPoint) else { throw RequestError.badURL }
-            request = URLRequest(url: url)
-            if let body = networkRequestArguments.httpBody {
-                request?.httpBody = body.description.data(using: .utf8)
+        if let strings = additionalURLStrings {
+            for string in strings {
+                endPoint.append(string)
             }
         }
         
-        if request != nil {
-            request?.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-            request?.setValue("application/json", forHTTPHeaderField: "Accept")
+        guard let endPointURL = URL(string: endPoint) else { throw RequestError.badURL }
+        
+        var request = URLRequest(url: endPointURL)
+        request.httpMethod = method
             
-            return request!
-        } else {
-            throw RequestError.badRequest
-        }
+            do {
+                let jsonData = try JSONEncoder().encode(body)
+                request.httpBody = jsonData
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            } catch {
+                throw RequestError.badRequest
+            }
+            
+            return request
     }
 }

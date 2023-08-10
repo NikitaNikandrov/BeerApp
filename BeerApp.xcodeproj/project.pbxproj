@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E540B42A2A8427DF00B6BD1D /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B4292A8427DF00B6BD1D /* NetworkRequestProtocol.swift */; };
 		E540B42C2A842C8A00B6BD1D /* NetworkRequestImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B42B2A842C8A00B6BD1D /* NetworkRequestImpl.swift */; };
-		E540B42F2A842CFB00B6BD1D /* NetworkRequestArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B42E2A842CFB00B6BD1D /* NetworkRequestArguments.swift */; };
 		E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */; };
 		E5FE9D872A5C99E3000938A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D862A5C99E3000938A1 /* ViewController.swift */; };
 		E5FE9D8C2A5C99E6000938A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FE9D8B2A5C99E6000938A1 /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		E540B4292A8427DF00B6BD1D /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
 		E540B42B2A842C8A00B6BD1D /* NetworkRequestImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestImpl.swift; sourceTree = "<group>"; };
-		E540B42E2A842CFB00B6BD1D /* NetworkRequestArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestArguments.swift; sourceTree = "<group>"; };
 		E5FE9D7F2A5C99E3000938A1 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5FE9D862A5C99E3000938A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				E540B4292A8427DF00B6BD1D /* NetworkRequestProtocol.swift */,
 				E540B42B2A842C8A00B6BD1D /* NetworkRequestImpl.swift */,
-				E540B42E2A842CFB00B6BD1D /* NetworkRequestArguments.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -211,7 +208,6 @@
 				E540B42C2A842C8A00B6BD1D /* NetworkRequestImpl.swift in Sources */,
 				E5FE9DA82A699ED1000938A1 /* Malt.swift in Sources */,
 				E540B42A2A8427DF00B6BD1D /* NetworkRequestProtocol.swift in Sources */,
-				E540B42F2A842CFB00B6BD1D /* NetworkRequestArguments.swift in Sources */,
 				E5FE9DA22A699DEC000938A1 /* MeasureOfQuantity.swift in Sources */,
 				E5FE9DB22A69A01C000938A1 /* Fermentation.swift in Sources */,
 				E5FE9DB02A699FF1000938A1 /* MashTemp.swift in Sources */,
