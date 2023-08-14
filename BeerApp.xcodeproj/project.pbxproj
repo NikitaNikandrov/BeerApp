@@ -12,6 +12,9 @@
 		E540B4312A856D0400B6BD1D /* NetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B4302A856D0400B6BD1D /* NetworkServiceImpl.swift */; };
 		E540B4332A8581FC00B6BD1D /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B4322A8581FC00B6BD1D /* NetworkServiceProtocol.swift */; };
 		E540B43E2A8AADC200B6BD1D /* NetworkRequestArgumentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B43D2A8AADC200B6BD1D /* NetworkRequestArgumentsProtocol.swift */; };
+		E540B4412A8AC27D00B6BD1D /* BeerHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B4402A8AC27D00B6BD1D /* BeerHeaders.swift */; };
+		E540B4432A8AC29000B6BD1D /* BeerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B4422A8AC29000B6BD1D /* BeerPath.swift */; };
+		E540B4452A8AC35500B6BD1D /* BeerEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B4442A8AC35500B6BD1D /* BeerEndPoint.swift */; };
 		E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */; };
 		E5FE9D872A5C99E3000938A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D862A5C99E3000938A1 /* ViewController.swift */; };
 		E5FE9D8C2A5C99E6000938A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FE9D8B2A5C99E6000938A1 /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 		E540B4302A856D0400B6BD1D /* NetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImpl.swift; sourceTree = "<group>"; };
 		E540B4322A8581FC00B6BD1D /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		E540B43D2A8AADC200B6BD1D /* NetworkRequestArgumentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestArgumentsProtocol.swift; sourceTree = "<group>"; };
+		E540B4402A8AC27D00B6BD1D /* BeerHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerHeaders.swift; sourceTree = "<group>"; };
+		E540B4422A8AC29000B6BD1D /* BeerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPath.swift; sourceTree = "<group>"; };
+		E540B4442A8AC35500B6BD1D /* BeerEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerEndPoint.swift; sourceTree = "<group>"; };
 		E5FE9D7F2A5C99E3000938A1 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5FE9D862A5C99E3000938A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,24 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		E540B43F2A8AC1A600B6BD1D /* BeerService */ = {
+			isa = PBXGroup;
+			children = (
+				E540B4462A8AC71800B6BD1D /* BerServiceResources */,
+			);
+			path = BeerService;
+			sourceTree = "<group>";
+		};
+		E540B4462A8AC71800B6BD1D /* BerServiceResources */ = {
+			isa = PBXGroup;
+			children = (
+				E540B4402A8AC27D00B6BD1D /* BeerHeaders.swift */,
+				E540B4422A8AC29000B6BD1D /* BeerPath.swift */,
+				E540B4442A8AC35500B6BD1D /* BeerEndPoint.swift */,
+			);
+			path = BerServiceResources;
+			sourceTree = "<group>";
+		};
 		E5FE9D762A5C99E2000938A1 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +122,7 @@
 		E5FE9D812A5C99E3000938A1 /* BeerApp */ = {
 			isa = PBXGroup;
 			children = (
+				E540B43F2A8AC1A600B6BD1D /* BeerService */,
 				E540B4282A8427A900B6BD1D /* NetworkService */,
 				E5FE9D962A5CA117000938A1 /* Model */,
 				E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */,
@@ -220,10 +245,13 @@
 			files = (
 				E5FE9D982A5CA137000938A1 /* BeerApiModel.swift in Sources */,
 				E5FE9D872A5C99E3000938A1 /* ViewController.swift in Sources */,
+				E540B4452A8AC35500B6BD1D /* BeerEndPoint.swift in Sources */,
 				E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */,
 				E540B43E2A8AADC200B6BD1D /* NetworkRequestArgumentsProtocol.swift in Sources */,
 				E5FE9DAA2A699EF2000938A1 /* Hop.swift in Sources */,
+				E540B4432A8AC29000B6BD1D /* BeerPath.swift in Sources */,
 				E540B42C2A842C8A00B6BD1D /* NetworkRequestImpl.swift in Sources */,
+				E540B4412A8AC27D00B6BD1D /* BeerHeaders.swift in Sources */,
 				E5FE9DA82A699ED1000938A1 /* Malt.swift in Sources */,
 				E540B42A2A8427DF00B6BD1D /* NetworkRequestProtocol.swift in Sources */,
 				E5FE9DA22A699DEC000938A1 /* MeasureOfQuantity.swift in Sources */,
