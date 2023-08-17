@@ -12,11 +12,25 @@ class BeerService {
     private let networkRequest = NetworkRequestImpl()
     private let networkService = NetworkServiceImpl()
     
-    func getBeer<T: Codable>(with arguments: NetworkRequestProtocol, for recieveModel: T) -> T {
+    func getBeer<T: Codable>(with arguments: NetworkRequestProtocol, for recieveModel: T.Type) async -> T? {
+        var request: URLRequest
+        var responseData: T?
         
-        let request = networkRequest.createNetworkRequest(with: arguments)
-        
-        
-        
+        do {
+            request = try networkRequest.createNetworkRequest(with: arguments as! NetworkRequestArgumentsProtocol)
+            
+            let (data, response) = try await networkService.sendRequest(with: request)
+            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                if let data = data {
+                    let jsonDecoder = JSONDecoder()
+                    
+                    guard let jsonData = try? jsonDecoder.decode(recieveModel, from: data) else { return nil }
+                    responseData = jsonData
+                }
+            }
+            return responseData
+        } catch {
+            return nil
+        }
     }
 }
