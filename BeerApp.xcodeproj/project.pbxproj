@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E540B42A2A8427DF00B6BD1D /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B4292A8427DF00B6BD1D /* NetworkRequestProtocol.swift */; };
-		E540B42C2A842C8A00B6BD1D /* NetworkRequestImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B42B2A842C8A00B6BD1D /* NetworkRequestImpl.swift */; };
-		E540B4312A856D0400B6BD1D /* NetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B4302A856D0400B6BD1D /* NetworkServiceImpl.swift */; };
-		E540B4332A8581FC00B6BD1D /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B4322A8581FC00B6BD1D /* NetworkServiceProtocol.swift */; };
-		E540B43E2A8AADC200B6BD1D /* NetworkRequestArgumentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E540B43D2A8AADC200B6BD1D /* NetworkRequestArgumentsProtocol.swift */; };
+		E50708C22ADDA6010067DFEB /* DataRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50708C12ADDA6010067DFEB /* DataRequestProtocol.swift */; };
+		E50708C42ADDA78F0067DFEB /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50708C32ADDA78F0067DFEB /* NetworkServiceProtocol.swift */; };
+		E50708C62ADDA7CB0067DFEB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50708C52ADDA7CB0067DFEB /* NetworkService.swift */; };
 		E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */; };
 		E5FE9D872A5C99E3000938A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE9D862A5C99E3000938A1 /* ViewController.swift */; };
 		E5FE9D8C2A5C99E6000938A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FE9D8B2A5C99E6000938A1 /* Assets.xcassets */; };
@@ -27,11 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E540B4292A8427DF00B6BD1D /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
-		E540B42B2A842C8A00B6BD1D /* NetworkRequestImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestImpl.swift; sourceTree = "<group>"; };
-		E540B4302A856D0400B6BD1D /* NetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImpl.swift; sourceTree = "<group>"; };
-		E540B4322A8581FC00B6BD1D /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
-		E540B43D2A8AADC200B6BD1D /* NetworkRequestArgumentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestArgumentsProtocol.swift; sourceTree = "<group>"; };
+		E50708C12ADDA6010067DFEB /* DataRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestProtocol.swift; sourceTree = "<group>"; };
+		E50708C32ADDA78F0067DFEB /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		E50708C52ADDA7CB0067DFEB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E5FE9D7F2A5C99E3000938A1 /* BeerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FE9D822A5C99E3000938A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5FE9D862A5C99E3000938A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,21 +58,11 @@
 		E540B4282A8427A900B6BD1D /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				E540B43C2A8AAD8200B6BD1D /* Request */,
-				E540B4322A8581FC00B6BD1D /* NetworkServiceProtocol.swift */,
-				E540B4302A856D0400B6BD1D /* NetworkServiceImpl.swift */,
+				E50708C12ADDA6010067DFEB /* DataRequestProtocol.swift */,
+				E50708C32ADDA78F0067DFEB /* NetworkServiceProtocol.swift */,
+				E50708C52ADDA7CB0067DFEB /* NetworkService.swift */,
 			);
 			path = NetworkService;
-			sourceTree = "<group>";
-		};
-		E540B43C2A8AAD8200B6BD1D /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				E540B42B2A842C8A00B6BD1D /* NetworkRequestImpl.swift */,
-				E540B4292A8427DF00B6BD1D /* NetworkRequestProtocol.swift */,
-				E540B43D2A8AADC200B6BD1D /* NetworkRequestArgumentsProtocol.swift */,
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		E5FE9D762A5C99E2000938A1 = {
@@ -221,17 +207,15 @@
 				E5FE9D982A5CA137000938A1 /* BeerApiModel.swift in Sources */,
 				E5FE9D872A5C99E3000938A1 /* ViewController.swift in Sources */,
 				E5FE9D832A5C99E3000938A1 /* AppDelegate.swift in Sources */,
-				E540B43E2A8AADC200B6BD1D /* NetworkRequestArgumentsProtocol.swift in Sources */,
 				E5FE9DAA2A699EF2000938A1 /* Hop.swift in Sources */,
-				E540B42C2A842C8A00B6BD1D /* NetworkRequestImpl.swift in Sources */,
 				E5FE9DA82A699ED1000938A1 /* Malt.swift in Sources */,
-				E540B42A2A8427DF00B6BD1D /* NetworkRequestProtocol.swift in Sources */,
 				E5FE9DA22A699DEC000938A1 /* MeasureOfQuantity.swift in Sources */,
+				E50708C22ADDA6010067DFEB /* DataRequestProtocol.swift in Sources */,
 				E5FE9DB22A69A01C000938A1 /* Fermentation.swift in Sources */,
+				E50708C42ADDA78F0067DFEB /* NetworkServiceProtocol.swift in Sources */,
 				E5FE9DB02A699FF1000938A1 /* MashTemp.swift in Sources */,
-				E540B4332A8581FC00B6BD1D /* NetworkServiceProtocol.swift in Sources */,
 				E5FE9DA62A699EAF000938A1 /* Ingredients.swift in Sources */,
-				E540B4312A856D0400B6BD1D /* NetworkServiceImpl.swift in Sources */,
+				E50708C62ADDA7CB0067DFEB /* NetworkService.swift in Sources */,
 				E5FE9DAE2A699F9F000938A1 /* Method.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
